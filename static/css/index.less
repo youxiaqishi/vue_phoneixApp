@@ -1,0 +1,457 @@
+.blur{
+  -webkit-filter: blur(10px); /* Chrome, Opera */
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);    
+  filter: blur(10px);
+}
+.icon-address{
+  margin-left: .05rem;
+  span{
+    margin-left: .4rem;
+  }
+}
+.loading-layer{
+  font-size: .2rem;
+  text-align: center;
+  color: #999;
+}
+.localizeShop{
+  position: absolute;
+  overflow-y:scroll;
+  background: rgba(255,255,255,1);
+  top:1.4rem;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  z-index: 1;
+  .closeModalBtn{
+    float: right;
+    height: 1rem;
+    width: 1rem;
+    display: block;
+    text-align: center;
+    background-size: .5rem!important;
+  }
+  .allShopData{
+    opacity: 0;
+    clear: both;
+    padding:0 .24rem; 
+    .noMessage {
+      text-align: center;
+      font-size: .3rem;
+    }
+    .tit{
+      font-size: .36rem;
+      color: #4b495b;
+      line-height: .9rem;
+      .checkMoreShop{
+        float: right;
+        margin-right: .2rem;
+        font-size: .3rem;
+        .icon-arrow-right{
+          top: 0;
+          right: .24rem;
+          margin-left: .1rem;
+          font-size: .45rem;
+          color: #4b4a5b;
+          float: right;
+          height: .96rem;
+          width: .2rem;
+        }
+      }
+    }
+    span.tit{
+      font-size: .36rem;
+      color: #4b495b;
+      line-height: .4rem;
+      border:1px solid #89262a;
+      background: #f3e9e9;
+      line-height: .4rem;
+      padding: 0 .2rem;
+      font-size: .24rem;
+      border-radius: 1rem;
+      position: absolute;
+      bottom: .1rem;
+      left: 2.5rem;
+    } 
+    .shop{
+      height: 2.2rem;
+      background: #fff;
+      box-shadow: 0 3px 10px #ccc;
+      padding: .2rem .2rem .2rem 2.5rem;
+      position: relative;
+      margin-bottom:.3rem;
+      dt{
+        position: absolute;
+        height: 1.8rem;
+        width: 1.8rem;
+        top:.2rem;
+        left: .2rem;
+      }
+      dd{
+        p{
+          font-size: .32rem;
+          color: #4b495b;
+          span{
+            display: block;
+            font-size: .28rem;
+            color: #929999;
+            margin-top: .1rem;
+          }
+          span.distance{
+            float: right;
+            margin-top: -.06rem;
+            color: #89262a;
+          }
+          span.distanceHand{
+            float: right;
+            margin-top: -.4rem;
+            color: #89262a;
+          }
+        }
+        i{
+          padding:.12rem .15rem;
+          color: #fff;
+          font-size: .26rem;
+          background: #89262a;
+          float: right;
+          position: absolute;
+          bottom: .1rem;
+          right: .2rem;
+        }
+      }
+    }
+  }
+  .location{
+    height: 2.6rem;
+    width: 100%;
+    padding-top: .3rem;
+    .locationIcon{
+      height: 2rem;
+      width: 3.4rem;
+      margin: 0 auto;
+      text-align: center;
+      font-size: .24rem;
+      color: #4b4a5b;
+      padding-top: 1.45rem;
+    }
+    span{
+      height: .5rem;
+      line-height: .5rem;
+      width: 1.8rem;
+      text-align: center;
+      display: block;
+      color: #1a191e;
+      font-size: .28rem;
+      border-radius: .5rem;
+      background: #e3e3e3;
+      border:1px solid #97969f;
+      margin:0 auto;
+    }
+  }
+  .location1{
+    height: 1.2rem;
+  }
+  .inputWrap{
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .28rem;
+    color: #4b495b;
+    border-bottom: 1px solid #a5a4ad;
+    position: relative;
+    i{
+      position: absolute;
+      top: 0;
+      right: .24rem;
+      font-size: .45rem;
+      color: #4b4a5b;
+      float: right;
+      height: 1rem;
+      width: .2rem;
+    }
+  }
+  .mt05{
+    margin-top: .5rem;
+  }
+}
+.selectCity{
+  padding: 0 .24rem;
+  opacity: 0;
+  z-index:-1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  .tit{
+    font-size: .36rem;
+    color: #4b495b;
+    line-height: .9rem;
+  }
+}
+.showShop{
+  position: absolute;
+  top:0;
+  width: 100%;
+}
+.showDiv{
+  opacity: 1!important;
+  z-index: 99!important;
+}
+.kefu{
+    height: .7rem;
+    width: 0.8rem;
+    display: block;
+}
+.address{
+  color: #8a262a;
+  span{
+      font-size: .26rem;
+      color: #626666;
+      margin-left: .1rem;
+      width: 1.5rem;
+      overflow: hidden;
+      display: block;
+      float: right;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+  }
+}
+.inputStyle{
+    background: #f4f4f4;
+    height: 24px;
+    line-height: 24px;
+    color: #888;
+    display: block;
+    font-size: .3rem;
+    padding-left:0px;
+    width: 61%;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 26%;
+}
+.indexPage{
+  .page-content{
+    background: #f7f7f7;      
+  }
+  .banner{
+    /*height: 5rem;*/
+    background: #fff;
+    img{
+      height: 4rem;
+      width: 100%;
+    }
+  }
+  .activity{
+    overflow: hidden;
+    .icon{
+      width: 33.33%;
+      float: left; 
+      height: .95rem;
+      line-height: .95rem;
+      font-size: .24rem;
+      color: #8a262a;
+      position: relative;
+      padding-left: 1.3rem;
+      img{
+        position: absolute;
+          top: .2rem;
+          width: .8rem;
+          height: .6rem;
+          left: .3rem;
+      }
+    }
+    .icon2{
+      padding-left: 1rem;
+    }
+  }
+  .title{
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .32rem;
+    color: #000;
+    text-align: center;
+    margin:0;
+    i.more{
+      height: 1rem;
+      display: inline-block;
+      padding-right: .6rem;
+      /*width: .4rem;*/
+      border-radius: 100%;
+    }
+    i:before{
+    }
+  }
+  .recommend{
+    background: #fff;
+    margin-top:.2rem;
+    overflow: hidden;
+    padding: 0 .23rem;
+    .recommendGoods{
+      clear: both;
+      padding-bottom: .1rem;
+      overflow: hidden;
+      div.cont{
+        border:1px solid #eee;
+        img{
+          width: 100%;
+        }
+      }
+      div.cont:first-child{
+        width: 3.2rem;
+        float: left;
+        margin-bottom: .2rem;
+        height: 4.35rem;
+        overflow: hidden;
+      }
+      div.cont:last-child{
+        width: 3.64rem;
+        height: 2.08rem;
+        float: right;
+        margin-bottom: .2rem;
+        overflow: hidden;
+      }
+      div.cont:nth-child(2){
+        width: 3.64rem;
+        height: 2.08rem;
+        float: right;
+        margin-bottom: .2rem;
+        overflow: hidden;
+      }
+    }  
+  }
+  .neighbor{
+    background: #fff;
+    margin-top:.2rem;
+    overflow: hidden;
+    padding: 0 .23rem .3rem .23rem;
+    overflow-x:auto;
+    overflow-y:hidden;
+    .neighborList{
+      list-style-type: none;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      overflow-x: auto;
+      overflow-y: hidden;   
+    }
+    .goods{
+      width: 2.7rem;
+      min-width: 2.7rem;
+      height: 4.25rem;
+      /*float: left;*/
+      margin-right: .24rem;
+      flex: 1 0 auto;
+      dt{
+        height: 2.7rem;
+      }
+      dd{
+        padding:0 .16rem;
+        line-height: .37rem;
+        text-align: left;
+      }
+      .goodsName{
+        height: .7rem;
+        line-height: .7rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .coupon{
+    margin-top:.2rem;
+    padding:0 .2rem;
+    img{
+      width: 100%;
+      height: 1.8rem;
+    }
+  }
+  .style1{
+    background: #fff;
+    margin-top:.2rem;
+    overflow: hidden;
+    padding: 0 .23rem .3rem .23rem;
+    .styleList1{
+      .services{
+        margin: 0;
+        border-top: 1px solid #eee;
+        height: 2.8rem;
+        overflow: hidden; 
+        clear: both;
+        dt{
+          width: 2.8rem;
+          height: 2.8rem;
+          float: left;
+          img{
+            height: 100%;
+            width: 100%;
+          }
+        }
+        dd{
+          padding-left: .3rem;
+          float: left;
+          width: 4.2rem;
+          .goodsName{
+            height: 1.3rem;
+            line-height: 1.4rem;
+            font-size: .3rem;
+            color: #333;
+            margin:0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .owner,.selling{
+            font-size: .28rem;
+            color: #626666;
+            margin-bottom:.1rem;
+            line-height: .4rem;
+            margin:.14rem 0;
+            span{
+              float: left;
+              margin-right: .2rem;
+              height: .4rem;
+              text-align: center;
+              line-height: .4rem;
+              color: #fff;
+              font-size: .24rem;
+              width: .84rem;
+              border-radius: 3px;   
+              background: #c2cccc;            
+            }
+          }
+          .owner{
+            color: #89262a;
+            font-size: .36rem;
+            span{
+              background: #89262a;
+            }
+          }
+          .ownerAdd{
+            margin-top: .2rem;
+          }
+          .sellingAdd{
+            margin-top: .2rem!important;
+            span{
+              background: #89262a;
+            }
+          }
+        }
+      }
+    }
+  }
+  .youLike{
+    background: #fff;
+    margin-top:.2rem;
+    overflow: hidden;
+    padding: 0 .24rem 0 .24rem;
+  }
+  .otherStyle{
+    margin:0;
+    padding-top: .24rem;
+  }
+}

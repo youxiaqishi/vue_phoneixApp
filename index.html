@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        var isApp = 1 // APP: 1 FHH: 3
+        if (isApp === 3) {
+          var h5Url = window.location.href
+          if (h5Url.indexOf('refreshtoken=') > 0) {
+            var oneAfter = h5Url.split('?refreshtoken=')[1]
+            var twoBefore = oneAfter.split('?accesstoken=')[0]
+            var twoAfter = oneAfter.split('?accesstoken=')[1]
+            var threeAfter = twoAfter.split('#/')[0]
+            var params = {
+              'accessToken': threeAfter,
+              'refreshToken': twoBefore
+            }
+            window.localStorage.getItem('Token') && window.localStorage.setItem('OldToken', window.localStorage.getItem('Token'))
+            window.localStorage.setItem('isFHX', JSON.stringify('isFHX'))
+            window.localStorage.setItem('Token', JSON.stringify(params))
+            // window.history.replaceState(null,'凤凰优选','http://h5.fenghuangyouxuan.com/#/tabbar/index')
+            // window.location.href='http://h5.fenghuangyouxuan.com/#/tabbar/index'
+          }
+        }
+        if (isApp === 1) window.localStorage.setItem('isFHX', JSON.stringify('isFHX'))
+    </script>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+    <title>凤凰优选</title>
+    <script src="cordova.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
